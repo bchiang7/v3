@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+<body>
+
+  <div class="site">
+    <div class="header">
+      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+      <a class="extra" href="/">Home</a>
+    </div>
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    <div class="footer">
+      <div class="contact">
+        <p>
+          Your Name is<br />
+          What You Are<br />
+          you@example.com
+        </p>
+      </div>
+      <div class="contact">
+        <p>
+          <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+          <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

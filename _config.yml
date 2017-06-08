@@ -1,0 +1,34 @@
+# Site settings
+name: Patrick Star
+title: Patrick Star's Site
+description: Wumbo
+url: http://google.com
+baseurl: ""
+email:
+social:
+  - title: email
+    url:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+  - title: instagram
+    url:
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "*.gemspec"
+  - "README.md"
+  - "node_modules"
+  - "build"
+  - "gulpfile.js"
+  - "package.json"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
