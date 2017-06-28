@@ -1,0 +1,61 @@
+// Colors
+$black: #191E27;
+$blue: #007FFF;
+$white: #fff;
+
+// Fonts
+// $Chronicle: 'Chronicle Display Bold';
+// $serif-stack: Georgia, serif;
+// $Gotham: 'Gotham';
+// $Whitney: 'Whitney';
+// $sans-serif-stack: Helvetica, Arial, sans-serif;
+
+
+
+$button-height: 27px;
+$button-width: 30px;
+
+// Breakpoints
+$S: 330px;
+$S400: 400px;
+$S440: 440px;
+$SM: 480px;
+$S600: 600px;
+$S660: 660px;
+$M: 768px;
+$MM: 900px;
+$ML: 1000px;
+$L: 1170px;
+// Media queries
+@mixin MQ($canvas) {
+  @if $canvas==S {
+    @media only screen and (max-width: $S) { @content; }
+  }
+  @else if $canvas==S400 {
+    @media only screen and (max-width: $S400) { @content; }
+  }
+  @else if $canvas==S440 {
+    @media only screen and (max-width: $S440) { @content; }
+  }
+  @else if $canvas==SM {
+    @media only screen and (max-width: $SM) { @content; }
+  }
+  @else if $canvas==S600 {
+    @media only screen and (max-width: $S600) { @content; }
+  }
+  @else if $canvas==S660 {
+    @media only screen and (max-width: $S660) { @content; }
+  }
+  @else if $canvas==M {
+    @media only screen and (max-width: $M) { @content; }
+  }
+  @else if $canvas==MM {
+    @media only screen and (max-width: $MM) { @content; }
+  }
+  @else if $canvas==ML {
+    @media only screen and (max-width: $ML) { @content; }
+  }
+  @else if $canvas==L {
+    @media only screen and (max-width: $L) { @content; }
+  }
+}

@@ -1,5 +1,38 @@
-@import "partials/reset";
+@import "partials/globals";
+@import "partials/switch";
+@import "partials/intro";
+@import "partials/background";
+@import "partials/skills";
+@import "partials/experience";
+@import "partials/featured-projects";
+@import "partials/other-projects";
+@import "partials/footer";
 
-body {
-  background: white;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: $blue;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  // font-family: $Whitney, $sans-serif-stack;
+  &.night {
+    background-color: $black;
+    .fa {
+      color: $white;
+    }
+  }
+}
+
+section {
+  padding: 100px;
 }

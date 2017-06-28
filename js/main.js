@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){console.log("hi")});
+$(function(){const c=new Date,s=c.getHours();s>=19&&($("#switch").prop("checked",!0),$("body").addClass("night")),$("#toggle").click(function(){const c=$("#switch").is(":checked");c?$("body").removeClass("night"):$("body").addClass("night")})});

@@ -1,19 +1,26 @@
 # Site settings
-name: Patrick Star
-title: Patrick Star's Site
-description: Wumbo
-url: http://google.com
+name: Brittany Chiang
+title: Brittany Chiang | Front End Software Engineer
+description: Design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.
+url: http://brittanychiang.com
 baseurl: ""
-email:
+email: brittany.chiang@gmail.com
+cover: http://brittanychiang.com/img/og.jpg
+logo: http://brittanychiang.com/img/logo-black.png
+resume: http://brittanychiang.com/resume.pdf
 social:
   - title: email
-    url:
-  - title: facebook
-    url:
+    url: mailto:brittany.chiang@gmail.com
   - title: twitter
-    url:
+    url: https://twitter.com/bchiang7
   - title: instagram
-    url:
+    url: https://instagram.com/bchiang7
+  - title: codepen
+    url: http://codepen.io/bchiang7
+  - title: github
+    url: https://github.com/bchiang7
+  - title: linkedin
+    url: https://www.linkedin.com/in/bchiang7
 
 # Build settings
 markdown: kramdown
@@ -32,3 +39,7 @@ keep_files:
   - "CNAME"
   - ".git"
   - ".gitignore"
+
+gems:
+  - jekyll-minifier
+  - jekyll-sitemap

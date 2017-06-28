@@ -1,0 +1,53 @@
+.switch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  .toggle-wrapper {
+    margin: 10px;
+
+    #switch {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+      position: absolute;
+
+      &:checked + label {
+        background: #bada55;
+      }
+
+      &:checked + label:after {
+        left: calc(100% - 3px);
+        transform: translateX(-100%);
+      }
+    }
+
+    label {
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 55px;
+      height: 30px;
+      background: grey;
+      display: block;
+      border-radius: 100px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border-radius: 100%;
+        transition: 0.25s;
+      }
+    }
+
+
+  }
+}
