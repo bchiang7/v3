@@ -85,13 +85,12 @@ html, body {
   .title {
     flex-shrink: 0;
     width: 200px;
-    margin-right: 100px;
+    margin-right: 70px;
     color: $blue;
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
     letter-spacing: 1.5px;
-    white-space: nowrap;
     @include desktop {
       margin-right: 50px;
     }
@@ -152,4 +151,8 @@ ul {
   &:hover:after {
     transform: translateX(7px);
   }
+}
+
+.small {
+  font-size: 0.85rem;
 }

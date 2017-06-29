@@ -1,3 +1,48 @@
 #featured-projects {
+  .content {
+    max-width: 100%;
+  }
+  .project {
+    display: flex;
+    margin-bottom: 100px;
+    @include tablet {
+      display: block;
+      margin-bottom: 50px;
+    }
+    .pic {
+      max-width: 700px;
+      overflow: hidden;
+      &.phones {
+        display: flex;
+        justify-content: space-between;
+        .phone {
+          margin: 0 10px;
+        }
+      }
 
+      img {
+        width: 100%;
+        max-width:100%;
+      }
+    }
+    .caption {
+      width: 125px;
+      flex-shrink: 0;
+      margin-top: 3%;
+      margin-left: 20px;
+
+      @include tablet {
+        width: 100%;
+        margin-left: 0;
+      }
+      .name {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+      }
+    }
+  }
 }

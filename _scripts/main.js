@@ -2,7 +2,8 @@ $(function() {
 
   const d = new Date();
   const hours = d.getHours();
-  const nighttime = (hours >= 19) || (hours <= 7) // after 7pm or before 7am
+  // after 7pm or before 7am
+  const nighttime = ( hours >= 19 )  || ( hours <= 7 );
 
   if ( nighttime ) {
     $('#switch').prop( 'checked', true );
