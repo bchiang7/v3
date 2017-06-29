@@ -1,4 +1,5 @@
 @import "partials/globals";
+@import "partials/fonts";
 @import "partials/switch";
 @import "partials/intro";
 @import "partials/background";
@@ -24,15 +25,130 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: $white;
-  // font-family: $Whitney, $sans-serif-stack;
+  color: $black;
+  font-family: $Apercu, $sans-serif-stack;
+  line-height: 1.5;
+
+  a {
+    font-weight: 500;
+    color: $black;
+    transition: all 0.25s ease;
+    &:hover {
+      color: $night;
+    }
+  }
+
+  .used span {
+    background: $off-white;
+  }
+
   &.night {
-    background-color: $black;
-    .fa {
-      color: $white;
+    background-color: $night;
+    color: $slate;
+    a {
+      color: $slate;
+      &:hover {
+        color: $white;
+      }
+    }
+    .switch-wrapper {
+      .sun {
+        background: url('../img/sun-white.svg') no-repeat center;
+        background-size: 100%;
+      }
+      .moon {
+        background: url('../img/moon-white.svg') no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .used span {
+      background: $black;
     }
   }
 }
 
-section {
-  padding: 100px;
+.section {
+  display: flex;
+  padding: 100px 200px;
+  @include thirteen {
+    padding: 100px;
+  }
+  @include desktop {
+    padding: 50px;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    padding: 50px 30px;
+  }
+  .title {
+    flex-shrink: 0;
+    width: 180px;
+    margin-right: 100px;
+    color: $blue;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 1px;
+    @include desktop {
+      margin-right: 50px;
+    }
+    @include little-desktop {
+      width: 150px;
+    }
+    @include tablet {
+      text-align: left;
+      width: auto;
+    }
+  }
+  .content {
+    font-weight: 300;
+    font-size: 1.05rem;
+    width: 100%;
+    max-width: 700px;
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    @include tablet {
+      padding-top: 30px;
+      padding-left: 50px;
+    }
+    @include mobile {
+      padding-left: 30px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.arrow-link {
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.15s ease-in-out;
+  background-color: transparent;
+  white-space: nowrap;
+  &:after {
+    position: relative;
+    bottom: 0.2ex;
+    margin-left: 15px;
+    content: "";
+    background: url('../img/arrow.png') no-repeat center;
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all .15s ease-in-out;
+  }
+  &:hover:after {
+    transform: translateX(7px);
+  }
 }

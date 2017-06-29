@@ -1,3 +1,24 @@
 #skills {
+  .skillz {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    width: 85%;
+    @include tablet {
+      width: 90%;
+    }
+    @include weird-medium {
+      width: 100%;
+      flex-wrap: wrap;
+    }
 
+    .label {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    li {
+      margin: 3px 0;
+    }
+  }
 }

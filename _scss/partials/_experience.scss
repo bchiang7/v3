@@ -1,3 +1,31 @@
 #experience {
-
+  .job {
+    max-width: 600px;
+    margin-bottom: 25px;
+    .time-place {
+      display: flex;
+      justify-content: space-between;
+      @include mobile {
+        display: block;
+      }
+      .company {
+        font-weight: 700;
+      }
+      .time {
+        font-weight: 400;
+        font-size: 1rem;
+        color: $grey;
+        @include mobile {
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .position {
+      font-size: 1rem;
+    }
+  }
+  .arrow-link {
+    margin-top: 70px;
+    font-size: 1.25rem;
+  }
 }

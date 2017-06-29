@@ -1,5 +1,15 @@
 <section id="experience" class="section">
-
-
-
+  <div class="title">Experience</div>
+  <div class="content">
+    {% for job in site.data.experience %}
+    <div class="job">
+      <div class="time-place">
+        <div class="company"><a href="{{job.url}}" target="_blank">{{job.company}}</a></div>
+        <div class="time">{{job.time}}</div>
+      </div>
+      <div class="position">{{job.position}}</div>
+    </div>
+    {% endfor %}
+    <a href="http://brittanychiang.com/resume.pdf" class="arrow-link">View My Resume</a>
+  </div>
 </section>

@@ -1,18 +1,66 @@
 #intro {
-  padding: 180px 100px;
+  padding: 150px 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  @include phablet {
+    padding: 150px 50px;
+  }
+  @include mobile {
+    padding: 100px 50px;
+  }
   .hello, .tagline {
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: 2.5rem;
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include phablet {
+      font-size: 1.75rem;
+    }
+    @include small-mobile {
+      font-size: 1.5rem;
+    }
+    @include tiny-mobile {
+      font-size: 1.25rem;
+    }
+  }
+  .hello {
+    .wave {
+      margin-left: 10px;
+    }
+  }
+  .tagline {
+    max-width: 700px;
+    .name {
+      font-weight: 700;
+    }
   }
   .contact {
     font-size: 1.25rem;
+    font-weight: 400;
+    @include phablet {
+      font-size: 1rem;
+    }
     .pointer {
-      margin: 0 10px;
+      margin: 0 5px;
+      vertical-align: middle;
+      font-size: 2rem;
+      @include phablet {
+        font-size: 1rem;
+      }
+    }
+    .highlight-link {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 3px;
+      transition: all .2s ease-in-out;
+      text-decoration: none;
+      box-shadow: inset 0 -3px 0 $blue;
+      &:hover {
+        box-shadow: inset 0 -30px 0 0 $blue;
+        color: $white;
+      }
     }
   }
 }

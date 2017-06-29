@@ -1,5 +1,22 @@
 <footer>
-
+  <div class="copyright">
+    <div class="top">
+      <span>Designed &amp; Developed by</span>
+    </div>
+    <div class="bottom">
+      <span>Brittany Chiang</span>
+      <span class="emoji">👍</span>
+      <span>2017</span>
+    </div>
+  </div>
+  <div class="links">
+    {% for link in site.social %}
+    <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+      <span class="text">{{link.title}}</span>
+      <img src="../img/social/{{link.title}}.svg" alt="{{link.title}}">
+    </a>
+    {% endfor %}
+  </div>
 
 
 </footer>

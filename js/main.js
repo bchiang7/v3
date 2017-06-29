@@ -1,1 +1,1 @@
-$(function(){const c=new Date,s=c.getHours();s>=19&&($("#switch").prop("checked",!0),$("body").addClass("night")),$("#toggle").click(function(){const c=$("#switch").is(":checked");c?$("body").removeClass("night"):$("body").addClass("night")})});
+$(function(){const c=new Date,s=c.getHours(),t=s>=19||s<=7;t&&($("#switch").prop("checked",!0),$("body").addClass("night")),$("#toggle").click(function(){const c=$("#switch").is(":checked");c?$("body").removeClass("night"):$("body").addClass("night")})});

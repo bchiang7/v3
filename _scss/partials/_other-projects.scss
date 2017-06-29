@@ -1,3 +1,32 @@
 #other-projects {
-
+  .projects {
+    .project {
+      max-width: 600px;
+      margin-bottom: 50px;
+      .name {
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        @include mobile {
+          font-size: 0.9rem;
+        }
+      }
+      .used {
+        span {
+          display: inline-block;
+          margin: 3px 3px 3px 0;
+          font-size: 0.75rem;
+          font-weight: 400;
+          padding: 3px 7px;
+          border-radius: 3px;
+          color: $grey;
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }

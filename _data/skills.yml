@@ -1,0 +1,35 @@
+languages:
+  - item: JavaScript (ES6)
+  - item: HTML
+  - item: CSS/Sass
+  - item: Python
+  - item: Java
+  - item: SQL
+
+frameworks:
+  - item: Jekyll
+  - item: Node.js
+  - item: Backbone
+  - item: Ember
+  - item: React
+  - item: Angular
+  - item: D3
+
+tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Gulp & Grunt
+  - item: Chrome DevTools
+  - item: MySQL
+  - item: Cordova
+  - item: MongoDB
+
+design:
+  - item: Sketch
+  - item: InVision
+  - item: Photoshop
+  - item: InDesign
+  - item: Illustrator
+  - item: Prototyping
+  - item: User Testing
+  - item: Typography

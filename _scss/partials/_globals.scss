@@ -1,61 +1,72 @@
 // Colors
-$black: #191E27;
+$night: #191E27;
+$black: #36363C;
+$grey: #777777;
 $blue: #007FFF;
+$slate: #CED0DA;
+$off-white: #eaeaea;
 $white: #fff;
+$green: #BADA55;
 
 // Fonts
-// $Chronicle: 'Chronicle Display Bold';
-// $serif-stack: Georgia, serif;
-// $Gotham: 'Gotham';
-// $Whitney: 'Whitney';
-// $sans-serif-stack: Helvetica, Arial, sans-serif;
+$Apercu: 'Apercu';
+$sans-serif-stack: Helvetica, Arial, sans-serif;
 
 
+// Media queries =============================================================
+$fifteen-inch: 1440px;
+$thirteen-inch: 1280px;
+$desktop-width: 1024px;
+$little-desktop: 850px;
+$tablet-width: 768px;
+$weird-not-tablet-width: 630px;
+$phablet-width: 550px;
+$mobile-width: 480px;
+$small-mobile-width: 360px;
+$tiny-mobile-width: 330px;
 
-$button-height: 27px;
-$button-width: 30px;
-
-// Breakpoints
-$S: 330px;
-$S400: 400px;
-$S440: 440px;
-$SM: 480px;
-$S600: 600px;
-$S660: 660px;
-$M: 768px;
-$MM: 900px;
-$ML: 1000px;
-$L: 1170px;
-// Media queries
-@mixin MQ($canvas) {
-  @if $canvas==S {
-    @media only screen and (max-width: $S) { @content; }
+@mixin thirteen {
+  @media screen and (max-width: #{$thirteen-inch}) {
+    @content;
   }
-  @else if $canvas==S400 {
-    @media only screen and (max-width: $S400) { @content; }
+}
+@mixin desktop {
+  @media screen and (max-width: #{$desktop-width}) {
+    @content;
   }
-  @else if $canvas==S440 {
-    @media only screen and (max-width: $S440) { @content; }
+}
+@mixin little-desktop {
+  @media screen and (max-width: #{$little-desktop}) {
+    @content;
   }
-  @else if $canvas==SM {
-    @media only screen and (max-width: $SM) { @content; }
+}
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
   }
-  @else if $canvas==S600 {
-    @media only screen and (max-width: $S600) { @content; }
+}
+@mixin weird-medium {
+  @media screen and (max-width: #{$weird-not-tablet-width}) {
+    @content;
   }
-  @else if $canvas==S660 {
-    @media only screen and (max-width: $S660) { @content; }
+}
+@mixin phablet {
+  @media screen and (max-width: #{$phablet-width}) {
+    @content;
   }
-  @else if $canvas==M {
-    @media only screen and (max-width: $M) { @content; }
+}
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
   }
-  @else if $canvas==MM {
-    @media only screen and (max-width: $MM) { @content; }
+}
+@mixin small-mobile {
+  @media screen and (max-width: #{$small-mobile-width}) {
+    @content;
   }
-  @else if $canvas==ML {
-    @media only screen and (max-width: $ML) { @content; }
-  }
-  @else if $canvas==L {
-    @media only screen and (max-width: $L) { @content; }
+}
+@mixin tiny-mobile {
+  @media screen and (max-width: #{$tiny-mobile-width}) {
+    @content;
   }
 }

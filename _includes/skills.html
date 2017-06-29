@@ -1,5 +1,41 @@
 <section id="skills" class="section">
-
-
+  <div class="title">Skills</div>
+  <div class="content">
+    <p>With three co-ops under my belt, I’ve had 18 months of industry experience. I’ve picked up quite a few skills along the way, and strive to improve myself everyday. Here are a few skills that I’ve had experience with and plan to add to.</p>
+    <div class="skillz">
+      <div class="category">
+        <div class="label">Languages</div>
+        <ul>
+          {% for language in site.data.skills.languages %}
+          <li>{{language.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="category">
+        <div class="label">Frameworks</div>
+        <ul>
+          {% for framework in site.data.skills.frameworks %}
+          <li>{{framework.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="category">
+        <div class="label">Tools</div>
+        <ul>
+          {% for tool in site.data.skills.tools %}
+          <li>{{tool.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="category">
+        <div class="label">Design</div>
+        <ul>
+          {% for thing in site.data.skills.design %}
+          <li>{{thing.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </section>
