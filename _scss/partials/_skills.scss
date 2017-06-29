@@ -12,6 +12,13 @@
       width: 100%;
       flex-wrap: wrap;
     }
+    .category {
+      @include weird-medium {
+        width: 47%;
+        margin-right: 5px;
+        margin-bottom: 25px;
+      }
+    }
 
     .label {
       font-weight: 700;
