@@ -32,9 +32,9 @@ html, body {
   a {
     font-weight: 500;
     color: $black;
-    transition: all 0.25s ease;
+    transition: all 0.25s ease-in-out;
     &:hover {
-      color: $night;
+      color: $grey;
     }
   }
 
@@ -45,6 +45,10 @@ html, body {
   &.night {
     background-color: $night;
     color: $slate;
+    ::selection {
+      color: $black;
+      background: $yellow;
+    }
     a {
       color: $slate;
       &:hover {
@@ -69,6 +73,7 @@ html, body {
 
 .section {
   display: flex;
+  justify-content: center;
   padding: 100px 200px;
   @include thirteen {
     padding: 100px;

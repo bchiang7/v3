@@ -42,15 +42,17 @@ footer {
       color: $blue !important;
       text-transform: uppercase;
       font-weight: 700;
-      margin: 0 20px;
+      margin: 0 15px;
       @include desktop {
         margin: 0 10px;
       }
-      @include weird-medium {
-        margin: 0 5px;
+      &:hover {
+        opacity: 0.85;
       }
       .text {
+        font-size: 0.9rem;
         display: inline;
+        letter-spacing: 1px;
         @include little-desktop {
           display: none;
         }
@@ -58,7 +60,7 @@ footer {
     }
     img {
       display: none;
-      width: 30px;
+      width: 22px;
       @include little-desktop {
         display: inline-block;
       }
