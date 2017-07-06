@@ -146,9 +146,10 @@ ul {
     bottom: 0.2ex;
     margin-left: 15px;
     content: "";
-    background: url('../img/arrow.png') no-repeat center;
-    width: 18px;
-    height: 17px;
+    background: url('../img/arrow@2x.png') no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
     display: inline-block;
     vertical-align: middle;
     -webkit-transition: all .15s ease-in-out;
