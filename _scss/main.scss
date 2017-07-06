@@ -33,9 +33,6 @@ html, body {
     font-weight: 500;
     color: $black;
     transition: all 0.25s ease-in-out;
-    &:hover {
-      color: $grey;
-    }
   }
 
   .used span {
@@ -51,9 +48,6 @@ html, body {
     }
     a {
       color: $slate;
-      &:hover {
-        color: $white;
-      }
     }
     .switch-wrapper {
       .sun {
@@ -64,6 +58,9 @@ html, body {
         background: url('../img/moon-white.svg') no-repeat center;
         background-size: 100%;
       }
+    }
+    #other-projects .projects .project p a:after {
+      background: $slate;
     }
     .used span {
       background: $black;
@@ -163,4 +160,7 @@ ul {
   font-size: 0.85rem;
   display: inline-block;
   margin-top: 15px;
+  &:after {
+    display: none;
+  }
 }
