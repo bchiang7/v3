@@ -7,11 +7,8 @@
         margin-bottom: 10px;
       }
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 20px;
-        @include mobile {
-          font-size: 0.9rem;
-        }
 
         a {
           position: relative;

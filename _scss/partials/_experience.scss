@@ -13,15 +13,11 @@
       }
       .time {
         font-weight: 400;
-        font-size: 1rem;
         color: $grey;
         @include mobile {
           font-size: 0.75rem;
         }
       }
-    }
-    .position {
-      font-size: 1rem;
     }
   }
   .arrow-link {
