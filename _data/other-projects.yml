@@ -1,7 +1,7 @@
 - name: Lonely Planet DBMS
   url: https://github.com/bchiang7/CS3200-Project
   code: https://github.com/bchiang7/CS3200-Project
-  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing <a href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Lonely Planet's Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
+  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
   used:
     - thing: Python
     - thing: MySQL
