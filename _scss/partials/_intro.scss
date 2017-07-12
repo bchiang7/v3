@@ -33,9 +33,26 @@
     @include tiny-mobile {
       font-size: 1.4rem;
     }
+    .emoji {
+      width: 40px;
+      height: 40px;
+      @include desktop {
+        width: 35px;
+        height: 35px;
+      }
+      @include tablet {
+        width: 30px;
+        height: 30px;
+      }
+      @include small-mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
   .hello {
     .wave {
+      background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
     }
   }
@@ -44,6 +61,9 @@
     .name {
       font-weight: 700;
     }
+    .technologist {
+      background-image: url('../img/emojis/technologist.png');
+    }
   }
   .contact {
     font-size: 1.25rem;
@@ -51,12 +71,17 @@
     @include phablet {
       font-size: 1rem;
     }
-    .pointer {
-      margin: 0 5px;
-      vertical-align: middle;
-      font-size: 2rem;
-      @include phablet {
-        font-size: 1rem;
+    .emoji {
+      &.pointer {
+        background-image: url('../img/emojis/pointright.png');
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        vertical-align: text-bottom;
+        @include phablet {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
     .highlight-link {

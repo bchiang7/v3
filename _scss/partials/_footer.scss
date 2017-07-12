@@ -29,7 +29,13 @@ footer {
       }
     }
     .emoji {
-      margin: 0 5px;
+      &.thumbsup {
+        background-image: url('../img/emojis/thumbsup.png');
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        vertical-align: text-bottom;
+      }
     }
   }
   .links {

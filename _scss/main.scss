@@ -68,6 +68,14 @@ html, body {
   }
 }
 
+.emoji {
+  display: inline-block;
+  vertical-align: text-top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .section {
   display: flex;
   justify-content: center;
