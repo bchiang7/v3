@@ -1,6 +1,6 @@
-- company: Apple. Inc.
-  url: https://www.apple.com/
-  time: July - Dec 2017
+- company: Apple
+  url: https://www.apple.com/music/
+  time: July 2017 - Present
   position: UI Engineer Co-op
 
 - company: Scout
@@ -8,7 +8,7 @@
   time: Jan - June 2017
   position: Studio Developer
 
-- company: Starry, Inc.
+- company: Starry
   url: https://starry.com/
   time: July - Dec 2016
   position: Software Engineer Co-op

@@ -8,26 +8,26 @@ languages:
 
 frameworks:
   - item: Jekyll
-  - item: Node.js
   - item: Backbone
   - item: Ember
-  - item: React
-  - item: Angular
   - item: D3
+  - item: Angular
+  - item: React
+  - item: Cordova
 
 tools:
+  - item: Node.js
   - item: Bash
   - item: Git & Github
   - item: Gulp & Grunt
   - item: Chrome DevTools
-  - item: Cordova
   - item: MongoDB
   - item: MySQL
 
 design:
   - item: Sketch
-  - item: InVision
   - item: InDesign
+  - item: InVision
   - item: Prototyping
   - item: User Testing
   - item: Typography
