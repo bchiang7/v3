@@ -15,12 +15,18 @@ module.exports = gulp => {
     .on('close', done);
   });
 
+  // run `jekyll build` with _config_dev.yml
+  gulp.task('jekyll-dev', done => {
+    return cp.spawn( jekyll , ['build', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
+    .on('close', done);
+  });
+
   // Rebuild Jekyll then reload the page
-  gulp.task( 'jekyll-rebuild', ['jekyll-build'], () => {
+  gulp.task( 'jekyll-rebuild', ['jekyll-dev'], () => {
     browserSync.reload();
   });
 
-  gulp.task( 'serve', ['jekyll-build'], () => {
+  gulp.task( 'serve', ['jekyll-dev'], () => {
     browserSync.init({
       server: {
         baseDir: '_site'
