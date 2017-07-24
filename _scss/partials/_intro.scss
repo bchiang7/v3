@@ -6,7 +6,6 @@
   justify-content: space-around;
   max-width: 1440px;
   margin: 0 auto;
-  font-weight: 300;
   @include weird-medium {
     padding: 150px 70px;
   }
@@ -51,12 +50,14 @@
     }
   }
   .hello {
+    font-weight: 300;
     .wave {
       background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
     }
   }
   .tagline {
+    font-weight: 300;
     max-width: 700px;
     .name {
       font-weight: 700;
