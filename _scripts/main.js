@@ -30,10 +30,10 @@ window.addEventListener( 'scroll', function() {
   } else {
     $topButton.fadeOut();
   }
-}, false);
+}, false );
 
 topButton.addEventListener( 'click', function() {
-  $("html, body").animate({
+  $('html, body').animate({
     scrollTop: 0
-  }, 600);
+  }, 500 );
 });
