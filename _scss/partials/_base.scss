@@ -80,7 +80,7 @@ html, body {
     display: block;
   }
   @include mobile {
-    padding: 50px 30px;
+    padding: 50px 35px;
   }
   .title {
     flex-shrink: 0;
@@ -138,7 +138,7 @@ ul {
   white-space: nowrap;
   &:after {
     position: relative;
-    bottom: 0.2ex;
+    bottom: 2px;
     margin-left: 15px;
     content: "";
     background: url('../img/arrow@2x.png') no-repeat center;
@@ -160,5 +160,28 @@ ul {
   margin-top: 15px;
   &:after {
     display: none;
+  }
+}
+
+#top-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  @include desktop {
+    right: 7px;
+    width: 35px;
+  }
+  @include mobile {
+    right: 3px;
+  }
+
+  img {
+    width: 100%;
   }
 }

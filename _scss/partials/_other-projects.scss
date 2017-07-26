@@ -37,11 +37,13 @@
         span {
           display: inline-block;
           margin: 3px 3px 3px 0;
-          font-size: 0.75rem;
+          font-size: 0.70rem;
           font-weight: 400;
           padding: 3px 7px;
           border-radius: 3px;
-          color: $grey;
+          color: $blue;
+          border: 1px solid $blue;
+          background: transparent;
           &:first-of-type {
             margin-left: 0;
           }
