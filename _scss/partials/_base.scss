@@ -172,6 +172,7 @@ ul {
   bottom: 10px;
   right: 10px;
   cursor: pointer;
+  transition: all 0.25s ease;
   display: none;
   @include desktop {
     right: 7px;
@@ -179,6 +180,10 @@ ul {
   }
   @include mobile {
     right: 3px;
+  }
+
+  &:hover, &:focus {
+    transform: translateY(-10px);
   }
 
   img {
