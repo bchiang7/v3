@@ -11,31 +11,31 @@ module.exports = gulp => {
 
   // run `jekyll build`
   gulp.task( 'jekyll-build', done => {
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn(jekyll , ['build'], {stdio: 'inherit'})
     .on('close', done);
   });
 
   // run `jekyll build` with _config_dev.yml
   gulp.task('jekyll-dev', done => {
-    return cp.spawn( jekyll , ['build', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
+    return cp.spawn(jekyll , ['build', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
     .on('close', done);
   });
 
   // Rebuild Jekyll then reload the page
-  gulp.task( 'jekyll-rebuild', ['jekyll-dev'], () => {
+  gulp.task('jekyll-rebuild', ['jekyll-dev'], () => {
     browserSync.reload();
   });
 
-  gulp.task( 'serve', ['jekyll-dev'], () => {
+  gulp.task('serve', ['jekyll-dev'], () => {
     browserSync.init({
       server: {
         baseDir: '_site'
       }
     });
 
-    gulp.watch( scssPath, [ 'sass', browserSync.reload ] );
-    gulp.watch( jsPath, [ 'scripts', browserSync.reload ] );
-    gulp.watch( templatePath, [ 'jekyll-rebuild' ] );
+    gulp.watch(scssPath, ['sass', browserSync.reload]);
+    gulp.watch(jsPath, ['scripts', browserSync.reload]);
+    gulp.watch(templatePath, ['jekyll-rebuild']);
   });
 
 }

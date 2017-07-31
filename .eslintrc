@@ -2,6 +2,6 @@
   "root": true,
   "extends": "starry",
   "rules": {
-    "no-var": 0,
+    "starry/space-in-parens": ["error", "never"]
   }
 }
