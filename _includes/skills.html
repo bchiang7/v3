@@ -1,37 +1,37 @@
-<section id="skills" class="section">
-  <div class="title">Skills</div>
-  <div class="content">
+<section class="section skills">
+  <div class="section__title">Skills</div>
+  <div class="section__content">
     <p>I’ve picked up quite a few skills during the course of my three co-ops, and aim to improve these skills everyday. Here are a few of the technologies that I have experience with:</p>
     <div class="skillz">
-      <div class="category">
-        <div class="label">Languages</div>
+      <div class="skillz__category">
+        <div class="skillz__category__label">Languages</div>
         <ul>
           {% for language in site.data.skills.languages %}
-          <li>{{language.item}}</li>
+          <li class="skillz__category__item">{{language.item}}</li>
           {% endfor %}
         </ul>
       </div>
-      <div class="category">
-        <div class="label">Frameworks</div>
+      <div class="skillz__category">
+        <div class="skillz__category__label">Frameworks</div>
         <ul>
           {% for framework in site.data.skills.frameworks %}
-          <li>{{framework.item}}</li>
+          <li class="skillz__category__item">{{framework.item}}</li>
           {% endfor %}
         </ul>
       </div>
-      <div class="category">
-        <div class="label">Tools</div>
+      <div class="skillz__category">
+        <div class="skillz__category__label">Tools</div>
         <ul>
           {% for tool in site.data.skills.tools %}
-          <li>{{tool.item}}</li>
+          <li class="skillz__category__item">{{tool.item}}</li>
           {% endfor %}
         </ul>
       </div>
-      <div class="category">
-        <div class="label">Design</div>
+      <div class="skillz__category">
+        <div class="skillz__category__label">Design</div>
         <ul>
           {% for thing in site.data.skills.design %}
-          <li>{{thing.item}}</li>
+          <li class="skillz__category__item">{{thing.item}}</li>
           {% endfor %}
         </ul>
       </div>

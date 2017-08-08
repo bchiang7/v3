@@ -1,4 +1,4 @@
-#intro {
+.intro {
   padding: 150px 100px;
   height: 100vh;
   display: flex;
@@ -15,7 +15,8 @@
   @include mobile {
     padding: 100px 50px;
   }
-  .hello, .tagline {
+
+  &__hello, &__tagline {
     font-size: 2.5rem;
     @include desktop {
       font-size: 2.25rem;
@@ -49,14 +50,14 @@
       }
     }
   }
-  .hello {
+  &__hello {
     font-weight: 300;
     .wave {
       background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
     }
   }
-  .tagline {
+  &__tagline {
     font-weight: 300;
     max-width: 700px;
     .name {
@@ -66,7 +67,7 @@
       background-image: url('../img/emojis/technologist.png');
     }
   }
-  .contact {
+  &__contact {
     font-size: 1.25rem;
     font-weight: 400;
     @include phablet {

@@ -1,52 +1,50 @@
-#other-projects {
-  .projects {
-    .project {
-      max-width: 600px;
-      margin-bottom: 50px;
-      .name {
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-
-        a {
-          position: relative;
-          display: inline-block;
-          &:after {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: $black;
-            content: '';
-            opacity: 0;
-            transition: height 0.3s, opacity 0.3s, transform 0.3s;
-            transform: translateY(-5px);
-          }
-          &:hover:after,
-          &:focus:after {
-            height: 2px;
-            opacity: 1;
-            transform: translateY(-2px);
-          }
+.other-projects {
+  .project {
+    max-width: 600px;
+    margin-bottom: 50px;
+    &__name {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      a {
+        position: relative;
+        display: inline-block;
+        &:after {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: $black;
+          content: '';
+          opacity: 0;
+          transition: height 0.3s, opacity 0.3s, transform 0.3s;
+          transform: translateY(-5px);
+        }
+        &:hover:after,
+        &:focus:after {
+          height: 2px;
+          border-radius: 3px;
+          opacity: 1;
+          transform: translateY(-2px);
         }
       }
-      .used {
-        span {
-          display: inline-block;
-          margin: 3px 3px 3px 0;
-          font-size: 0.70rem;
-          font-weight: 400;
-          padding: 3px 7px;
-          border-radius: 3px;
-          color: $blue;
-          border: 1px solid $blue;
-          background: transparent;
-          &:first-of-type {
-            margin-left: 0;
-          }
+    }
+    &__used {
+      &__item {
+        display: inline-block;
+        margin: 3px 3px 3px 0;
+        font-size: 0.70rem;
+        font-weight: 400;
+        padding: 3px 7px;
+        border-radius: 3px;
+        color: $blue;
+        border: 1px solid $blue;
+        background: transparent;
+        &:first-of-type {
+          margin-left: 0;
         }
       }
     }

@@ -1,4 +1,4 @@
-#skills {
+.skills {
   .skillz {
     margin-top: 50px;
     display: flex;
@@ -12,19 +12,20 @@
       width: 100%;
       flex-wrap: wrap;
     }
-    .category {
+    &__category {
       @include weird-medium {
         width: 47%;
         margin-right: 5px;
         margin-bottom: 25px;
       }
+      &__label {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &__item {
+        margin: 3px 0;
+      }
     }
-    .label {
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    li {
-      margin: 3px 0;
-    }
+
   }
 }

@@ -21,7 +21,7 @@ $(function() {
     }
   });
 
-  const introHeight = document.getElementById('intro').offsetHeight;
+  const introHeight = document.querySelector('.intro').offsetHeight;
   const topButton = document.getElementById('top-button');
   const $topButton = $('#top-button');
 

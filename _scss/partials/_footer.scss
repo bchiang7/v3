@@ -1,4 +1,4 @@
-footer {
+.footer {
   padding: 50px 80px;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,7 @@ footer {
   @include mobile {
     padding: 50px 30px;
   }
-  .copyright {
+  &__copyright {
     font-weight: 700;
     width: 200px;
     @include weird-medium {
@@ -35,7 +35,7 @@ footer {
       vertical-align: text-bottom;
     }
   }
-  .links {
+  &__links {
     @include weird-medium {
       display: flex;
       justify-content: center;
@@ -69,6 +69,7 @@ footer {
       &:hover:after,
       &:focus:after {
         height: 2px;
+        border-radius: 3px;
         opacity: 1;
         transform: translateY(0px);
       }

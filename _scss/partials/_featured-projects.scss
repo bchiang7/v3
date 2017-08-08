@@ -1,4 +1,4 @@
-#featured-projects {
+.featured-projects {
   .project {
     display: flex;
     margin-bottom: 100px;
@@ -6,7 +6,7 @@
       display: block;
       margin-bottom: 70px;
     }
-    .pic {
+    &__pic {
       max-width: 700px;
       overflow: hidden;
       margin: 0;
@@ -36,7 +36,7 @@
         max-width:100%;
       }
     }
-    .caption {
+    &__caption {
       width: 125px;
       flex-shrink: 0;
       margin-left: 30px;
@@ -45,16 +45,16 @@
         margin-top: 25px;
         margin-left: 0;
       }
-      .name {
-        margin-bottom: 10px;
-        a {
-          font-weight: 700;
-        }
+    }
+    &__name {
+      margin-bottom: 10px;
+      a {
+        font-weight: 700;
       }
-      p {
-        font-size: 0.85rem;
-        line-height: 1.35;
-      }
+    }
+    p {
+      font-size: 0.85rem;
+      line-height: 1.35;
     }
   }
 }
