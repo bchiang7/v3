@@ -10,9 +10,7 @@
   background: $yellow;
 }
 
-strong {
-  font-weight: 700;
-}
+
 
 html, body {
   margin: 0;
@@ -34,15 +32,17 @@ html, body {
     padding: 0;
   }
 
+  strong {
+    font-weight: 700;
+    color: $black;
+  }
+
   &.night {
     background-color: $night;
     color: $slate;
     ::selection {
       color: $black;
       background: $yellow;
-    }
-    a {
-      color: $off-white;
     }
     .switch-wrapper {
       .sun {
@@ -54,15 +54,16 @@ html, body {
         background-size: 100%;
       }
     }
-    .section__content .underline-link:after {
-      background: $off-white;
-    }
-
+    a,
+    strong,
     .intro,
     .skills .skillz__category__label,
     .experience .job__time,
     .footer__copyright {
       color: $off-white;
+    }
+    .section__content .underline-link:after {
+      background: $off-white;
     }
   }
 
@@ -178,6 +179,7 @@ html, body {
   }
 
   .small {
+    font-family: 'Inconsolata', monospace;
     font-size: 0.85rem;
     display: inline-block;
     margin-top: 15px;

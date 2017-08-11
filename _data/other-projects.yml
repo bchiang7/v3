@@ -24,7 +24,7 @@
   url: https://github.com/crowddj/crowddj-react
   code: https://github.com/crowddj/crowddj-react
   description: A web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue. <br>
-    <a class="underline-link" class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 &nbsp; Won Best UI/UX Design at Hackbeanpot 2017 &nbsp; 🏆</a>
+    <a class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 Won Best UI/UX Design at Hackbeanpot 2017 🏆</a>
   used:
     - thing: React
     - thing: Sass
