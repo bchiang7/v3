@@ -1,9 +1,7 @@
 .skills {
   .skillz {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    font-size: 0.85rem;
     width: 85%;
     @include tablet {
       width: 90%;
@@ -20,12 +18,13 @@
       }
       &__label {
         font-weight: 700;
+        color: $black;
         text-transform: uppercase;
       }
       &__item {
         margin: 3px 0;
+        font-size: 0.9rem;
       }
     }
-
   }
 }

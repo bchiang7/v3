@@ -13,14 +13,12 @@
       font-weight: 700;
     }
     &__time {
-      font-weight: 400;
-      color: $grey;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.8rem;
       @include mobile {
         font-size: 0.75rem;
       }
-    }
-    &__position {
-      font-size: 0.9rem;
     }
   }
   .arrow-link {

@@ -10,16 +10,20 @@
   background: $yellow;
 }
 
+strong {
+  font-weight: 700;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   background-color: $white;
-  color: $black;
+  color: $dark-grey;
   font-family: $Apercu, $sans-serif-stack;
   line-height: 1.5;
 
   a {
-    font-weight: 500;
+    font-weight: 700;
     color: $black;
     transition: all 0.25s ease-in-out;
   }
@@ -36,7 +40,7 @@ html, body {
       background: $yellow;
     }
     a {
-      color: $slate;
+      color: $off-white;
     }
     .switch-wrapper {
       .sun {
@@ -48,12 +52,15 @@ html, body {
         background-size: 100%;
       }
     }
+    .intro,
+    .skills .skillz__category__label,
+    .experience .job__time,
+    .footer__copyright {
+      color: $off-white;
+    }
     #background a:after,
     #other-projects .projects .project p a:after, {
       background: $slate;
-    }
-    .used span {
-      background: $black;
     }
   }
 }
