@@ -54,7 +54,7 @@ html, body {
         background-size: 100%;
       }
     }
-    .section__content a:after {
+    .section__content .underline-link:after {
       background: $off-white;
     }
 
@@ -127,7 +127,7 @@ html, body {
         margin-top: 0;
         margin-bottom: 25px;
       }
-      a {
+      .underline-link {
         position: relative;
         display: inline-block;
         &:after {

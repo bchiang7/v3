@@ -1,7 +1,7 @@
 - name: Lonely Planet DBMS
   url: https://github.com/bchiang7/CS3200-Project
   code: https://github.com/bchiang7/CS3200-Project
-  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
+  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a class="underline-link" href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
   used:
     - thing: Python
     - thing: MySQL
@@ -24,7 +24,7 @@
   url: https://github.com/crowddj/crowddj-react
   code: https://github.com/crowddj/crowddj-react
   description: A web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue. <br>
-    <a class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 &nbsp; Won Best UI/UX Design at Hackbeanpot 2017 &nbsp; 🏆</a>
+    <a class="underline-link" class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 &nbsp; Won Best UI/UX Design at Hackbeanpot 2017 &nbsp; 🏆</a>
   used:
     - thing: React
     - thing: Sass
@@ -47,7 +47,7 @@
 
 # - name: ScreenTime 2.0
 #   url: https://play.google.com/store/apps/details?id=com.starry.management
-#   description: App-blocking feature on <a href="https://starry.com/station" target="_blank">Starry Station</a> that provides functionality for users to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their mobile phones. Learn more about ScreenTime 2.0 on <a href="https://www.producthunt.com/tech/screentime-for-starry-station" target="_blank">Product Hunt</a> and the <a href="https://blog.starry.com/whats-new-screentime-just-got-better-for-parents/" target="_blank">Starry Blog</a>.
+#   description: App-blocking feature on <a class="underline-link" href="https://starry.com/station" target="_blank">Starry Station</a> that provides functionality for users to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their mobile phones. Learn more about ScreenTime 2.0 on <a class="underline-link" href="https://www.producthunt.com/tech/screentime-for-starry-station" target="_blank">Product Hunt</a> and the <a class="underline-link" href="https://blog.starry.com/whats-new-screentime-just-got-better-for-parents/" target="_blank">Starry Blog</a>.
 #   used:
 #   - thing: JavaScript
 #   - thing: CSS
@@ -59,7 +59,7 @@
 - name: React Resume
   url: http://brittanychiang.com/react-profile/
   code: https://github.com/bchiang7/react-profile/
-  description: An online version of my 2016 resume I made for fun. I was interested in learning React.js, so I found this <a href="https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.1439cdewq">simple tutorial</a> and it kind of spun into this weekend project. I probably didn't need to use React at all, but hey, at least I learned a few things!
+  description: An online version of my 2016 resume I made for fun. I was interested in learning React.js, so I found this <a class="underline-link" href="https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.1439cdewq">simple tutorial</a> and it kind of spun into this weekend project. I probably didn't need to use React at all, but hey, at least I learned a few things!
   used:
   - thing: JavaScript
   - thing: React
@@ -109,7 +109,7 @@
 
 - name: One Card For All
   url: http://onecardforall.org
-  description: 2015 MullenLowe holiday site around an algorithm that generated a holiday greeting to each and every person on the planet. As new names appear, visitors can watch them fall, like snowflakes, onto a stylized world map. Users can also find their own name and see it as part of the world collective. Check out this short <a href="http://us.mullenlowe.com/work/one-card-for-all/" target="_blank">video</a> describing the project!
+  description: 2015 MullenLowe holiday site around an algorithm that generated a holiday greeting to each and every person on the planet. As new names appear, visitors can watch them fall, like snowflakes, onto a stylized world map. Users can also find their own name and see it as part of the world collective. Check out this short <a class="underline-link" href="http://us.mullenlowe.com/work/one-card-for-all/" target="_blank">video</a> describing the project!
   used:
     - thing: HTML
     - thing: SCSS
@@ -118,7 +118,7 @@
 
 - name: JetBlue HumanKinda
   url: http://jetbluehumankinda.com
-  description: Tumblr site designed to complement JetBlue's HumanKinda campaign and documentary. The site houses the video documentary at the top, the many graphics created by Mullen for the campaign, and an interactive quiz to determine how "HumanKinda" you are. Learn more about this project <a href="http://us.mullenlowe.com/work/humankinda/" target="_blank">here</a>!
+  description: Tumblr site designed to complement JetBlue's HumanKinda campaign and documentary. The site houses the video documentary at the top, the many graphics created by Mullen for the campaign, and an interactive quiz to determine how "HumanKinda" you are. Learn more about this project <a class="underline-link" href="http://us.mullenlowe.com/work/humankinda/" target="_blank">here</a>!
   used:
     - thing: HTML
     - thing: CSS
