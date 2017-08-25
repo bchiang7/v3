@@ -37,4 +37,14 @@ $(function() {
     $('html, body').animate({ scrollTop: 0 }, 500);
   });
 
+  const hand = document.querySelector('.emoji.wave-hand');
+
+  hand.addEventListener('mouseover', function() {
+    hand.classList.add('wave');
+  });
+
+  hand.addEventListener('mouseout', function() {
+    hand.classList.remove('wave');
+  });
+
 });

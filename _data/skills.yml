@@ -8,11 +8,11 @@ languages:
 
 frameworks:
   - item: Jekyll
-  - item: Backbone
   - item: Ember
+  - item: Backbone
   - item: D3
-  - item: Angular
   - item: React
+  - item: Angular
   - item: Cordova
 
 tools:

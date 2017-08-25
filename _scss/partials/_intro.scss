@@ -1,5 +1,5 @@
 .intro {
-  padding: 150px 100px;
+  padding: 120px 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,9 +52,42 @@
   }
   &__hello {
     font-weight: 300;
-    .wave {
+    .wave-hand {
       background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
+      cursor: pointer;
+
+      &.animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      &.wave {
+        animation-name: wave;
+      }
+
+      @keyframes wave {
+        from {
+          transform: none;
+        }
+        15% {
+          transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+        }
+        30% {
+          transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+        }
+        45% {
+          transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+        }
+        60% {
+          transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        }
+        75% {
+          transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+        }
+        to {
+          transform: none;
+        }
+      }
     }
   }
   &__tagline {
