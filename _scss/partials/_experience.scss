@@ -1,6 +1,5 @@
 .experience {
   .job {
-    max-width: 600px;
     margin-bottom: 25px;
     .time-place {
       display: flex;
@@ -15,6 +14,9 @@
     &__time {
       font-size: 0.9rem;
       font-family: 'Inconsolata', monospace;
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
   }
   .arrow-link {

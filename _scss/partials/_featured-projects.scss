@@ -2,6 +2,9 @@
   a:after {
     display: none;
   }
+  .section__content {
+    max-width: 850px;
+  }
   .project {
     display: flex;
     margin-bottom: 100px;
@@ -11,7 +14,7 @@
     }
     &__pic {
       max-width: 700px;
-      overflow: hidden;
+      overflow: visible;
       margin: 0;
       a {
         display: block;
@@ -22,15 +25,9 @@
           justify-content: space-between;
         }
         .phone {
-          margin: 0 10px;
-          @include small-mobile {
-            margin: 0 5px;
-          }
+          margin: 0 -7%;
           &:first-of-type {
-            margin-left: 0;
-          }
-          &:last-of-type {
-            margin-right: 0;
+            margin-left: -5%;
           }
         }
       }
@@ -57,8 +54,8 @@
       }
     }
     p {
-      font-size: 0.85rem;
-      line-height: 1.35;
+      font-size: 0.8rem;
+      line-height: 1.3;
     }
   }
 }

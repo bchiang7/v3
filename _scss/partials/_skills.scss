@@ -2,12 +2,7 @@
   .skillz {
     display: flex;
     justify-content: space-between;
-    width: 85%;
-    @include tablet {
-      width: 90%;
-    }
     @include weird-medium {
-      width: 100%;
       flex-wrap: wrap;
     }
     &__category {
