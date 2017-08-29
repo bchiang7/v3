@@ -2,13 +2,19 @@
   a:after {
     display: none;
   }
-  .section__content {
-    max-width: 850px;
-  }
   .project {
     display: flex;
     margin-bottom: 100px;
+    margin-left: -5%;
+    width: 125%;
+    @include thirteen {
+      width: 115%;
+    }
+    @include desktop {
+      width: 105%;
+    }
     @include tablet {
+      width: 100%;
       display: block;
       margin-bottom: 70px;
     }
