@@ -192,23 +192,24 @@ html, body {
     outline: none;
     width: 40px;
     position: fixed;
-    bottom: 10px;
+    bottom: 25px;
     right: 10px;
     cursor: pointer;
     transition: all 0.25s ease;
     display: none;
     @include desktop {
+      bottom: 20px;
       right: 7px;
       width: 35px;
     }
     @include mobile {
+      bottom: 15px;
       right: 3px;
     }
 
     &:hover, &:focus {
       transform: translateY(-10px);
     }
-
     img {
       width: 100%;
     }
