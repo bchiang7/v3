@@ -7,10 +7,10 @@
   max-width: 1440px;
   margin: 0 auto;
   @include weird-medium {
-    padding: 150px 70px;
+    padding: 120px 70px;
   }
   @include phablet {
-    padding: 150px 50px;
+    padding: 120px 50px;
   }
   @include mobile {
     padding: 70px 50px;
