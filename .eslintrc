@@ -2,6 +2,10 @@
   "root": true,
   "extends": "starry",
   "rules": {
-    "starry/space-in-parens": ["error", "never"]
+    "starry/space-in-parens": ["error", "never"],
+    "starry/computed-property-spacing": ["error", "never"],
+    "space-in-brackets": ["error", "never"],
+    "object-curly-spacing": [0, "always"],
+    "array-bracket-spacing": ["error", "never"]
   }
 }
