@@ -4,8 +4,7 @@
   "rules": {
     "starry/space-in-parens": ["error", "never"],
     "starry/computed-property-spacing": ["error", "never"],
-    "space-in-brackets": ["error", "never"],
-    "object-curly-spacing": [0, "always"],
+    "object-curly-spacing": [2, "never"],
     "array-bracket-spacing": ["error", "never"]
   }
 }

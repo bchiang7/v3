@@ -216,3 +216,15 @@ html, body {
   }
 
 }
+
+
+.waypoint {
+ opacity: 0;
+ transform: translate3d(0,20px,0);
+ transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateZ(0);
+}
