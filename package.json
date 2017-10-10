@@ -1,7 +1,7 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "v3",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "Personal Website Version 3",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,15 +9,15 @@
   "author": "Brittany Chiang",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "2.18.2",
+    "browser-sync": "^2.18.13",
     "eslint-config-starry": "2.0.1",
     "eslint-plugin-starry": "2.0.1",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "3.1.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "3.0.3",
     "gulp-eslint": "3.0.1",
     "gulp-imagemin": "3.1.1",
-    "gulp-sass": "3.1.0",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "2.0.0"
   },
   "repository": {
