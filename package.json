@@ -1,28 +1,28 @@
 {
-  "name": "v3",
+  "name": "brittanychiang.com",
   "version": "0.0.0",
-  "description": "Personal Website Version 3",
+  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "eslint-config-starry": "2.0.1",
-    "eslint-plugin-starry": "2.0.1",
+    "@nuscout/eslint-config": "^0.2.1",
+    "browser-sync": "^2.24.5",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "3.0.3",
-    "gulp-eslint": "3.0.1",
-    "gulp-imagemin": "3.1.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "2.0.0"
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "3.9.4",
+    "gulp-eslint": "5.0.0",
+    "gulp-imagemin": "4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/jekyll-gulp-sass-browser-sync"
+    "url": "https://github.com/bchiang7/bchiang7.github.io"
   },
-  "homepage": "https://github.com/bchiang7/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/bchiang7/bchiang7.github.io"
 }

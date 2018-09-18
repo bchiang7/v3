@@ -1,22 +1,22 @@
 // Colors
-$night: #131417;
-$black: #36363C;
+$night: #171c28;
+$black: #36363c;
 $dark-grey: #444452;
 $grey: #777777;
-$blue: #007BFF;
+$blue: #007bff;
 $slate: #afafbf;
 $off-white: #e7e7e7;
-$white: #fff;
-$green: #BADA55;
-$purple: #7D0CE8;
-$red: #FF0000;
-$orange: #E8850C;
-$yellow: #FFF10D;
-
+$white: #ffffff;
+$green: #bae67e;
+$purple: #7d0ce8;
+$red: #ff0000;
+$orange: #e8850c;
+$yellow: #ffdc00;
+$accent: #ffcc66;
 // Fonts
-$Apercu: 'Apercu';
-$sans-serif-stack: Source Sans Pro, Helvetica, Arial, sans-serif;
-
+$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
+  BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+$Apercu: 'Apercu', $font-stack;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;
@@ -29,46 +29,58 @@ $mobile-width: 480px;
 $small-mobile-width: 360px;
 $tiny-mobile-width: 330px;
 
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
 @mixin thirteen {
   @media screen and (max-width: #{$thirteen-inch}) {
     @content;
   }
 }
+
 @mixin desktop {
   @media screen and (max-width: #{$desktop-width}) {
     @content;
   }
 }
+
 @mixin little-desktop {
   @media screen and (max-width: #{$little-desktop}) {
     @content;
   }
 }
+
 @mixin tablet {
   @media screen and (max-width: #{$tablet-width}) {
     @content;
   }
 }
+
 @mixin weird-medium {
   @media screen and (max-width: #{$weird-not-tablet-width}) {
     @content;
   }
 }
+
 @mixin phablet {
   @media screen and (max-width: #{$phablet-width}) {
     @content;
   }
 }
+
 @mixin mobile {
   @media screen and (max-width: #{$mobile-width}) {
     @content;
   }
 }
+
 @mixin small-mobile {
   @media screen and (max-width: #{$small-mobile-width}) {
     @content;
   }
 }
+
 @mixin tiny-mobile {
   @media screen and (max-width: #{$tiny-mobile-width}) {
     @content;

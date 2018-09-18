@@ -3,11 +3,11 @@ name: Brittany Chiang
 title: Brittany Chiang | Front End Software Engineer
 description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
 url: https://brittanychiang.com/
-baseurl: "/v3"
+baseurl: ""
 email: brittany.chiang@gmail.com
-cover: http://brittanychiang.com/v3/img/og.png
-logo: http://brittanychiang.com/v3/img/emojis/technologist.png
-resume: http://brittanychiang.com/v3/resume.pdf
+cover: https://brittanychiang.com/img/og.png
+logo: https://brittanychiang.com/img/emojis/technologist.png
+resume: https://brittanychiang.com/resume.pdf
 social:
   - title: email
     url: mailto:brittany.chiang@gmail.com
@@ -40,6 +40,6 @@ keep_files:
   - ".git"
   - ".gitignore"
 
-plugins:
+plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
