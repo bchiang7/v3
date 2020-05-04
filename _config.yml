@@ -44,4 +44,3 @@ plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
 
-theme: jekyll-theme-architect
