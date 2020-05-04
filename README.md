@@ -1,4 +1,4 @@
-# Personal Website V3
+# Personal Website V3 Dhruv
 
 ## Dependencies
 
